@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-typescript-vue",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TypeScript preset for Babel 7.x supporting Vue.js components written in TS",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
