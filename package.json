@@ -1,0 +1,37 @@
+{
+  "name": "babel-preset-typescript-vue",
+  "version": "0.1.0",
+  "description": "TypeScript preset for Babel 7.x supporting Vue.js components written in TS",
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "Paweł Gabryelewicz",
+  "license": "MIT",
+  "keywords": [
+    "babel-preset",
+    "typescript",
+    "vue"
+  ],
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.0.0",
+    "@babel/plugin-transform-typescript": "^7.3.2",
+    "@babel/preset-typescript": "^7.3.3"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.5.5",
+    "rollup": "^1.10.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
