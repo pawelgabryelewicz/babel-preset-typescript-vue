@@ -8,6 +8,10 @@
     "build": "rollup -c"
   },
   "author": "Paweł Gabryelewicz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pawelgabryelewicz/babel-preset-typescript-vue"
+  },
   "license": "MIT",
   "keywords": [
     "babel-preset",
