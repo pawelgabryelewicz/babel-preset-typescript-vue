@@ -17,7 +17,8 @@
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.0.0",
     "@babel/plugin-transform-typescript": "^7.3.2",
-    "@babel/preset-typescript": "^7.3.3"
+    "@babel/preset-typescript": "^7.3.3",
+    "fast-xml-parser": "^3.12.17"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0-0"
