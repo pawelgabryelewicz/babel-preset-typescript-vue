@@ -23,7 +23,7 @@ export default declare(
               ignoreAttributes: false
             });
 
-            if(typeof json.script !== "undefined" && typeof json.script["@_lang"] && json.script["@_lang"].toLowerCase() === "ts") {
+            if(json.script && typeof json.script === "object" && typeof json.script["@_lang"] === "string" && json.script["@_lang"].toLowerCase() === "ts") {
               return true;
             }
 
