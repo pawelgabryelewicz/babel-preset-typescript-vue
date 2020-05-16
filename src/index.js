@@ -7,13 +7,13 @@ import presetTypeScript from "@babel/preset-typescript";
 
 
 export default declare(
-  (api, { jsxPragma, allExtensions = false, isTSX = false }) => {
+  (api, options = {}) => {
 
     api.assertVersion(7);
 
     return {
       "presets": [
-        [presetTypeScript, { jsxPragma, allExtensions, isTSX }]
+        [presetTypeScript, options]
       ],
       "overrides": [{
         "test": filePath => {
@@ -33,11 +33,7 @@ export default declare(
 
         },
         "plugins": [
-          [pluginTransformTypeScript, {
-            jsxPragma,
-            allExtensions,
-            isTSX
-          }]
+          [pluginTransformTypeScript, options]
         ]
       }]
     };

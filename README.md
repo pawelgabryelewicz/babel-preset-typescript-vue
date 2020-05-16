@@ -18,21 +18,7 @@ This preset checks whether the .vue file (SFC) has a `lang="ts"` attribute set f
 
 All the options match the original [@babel/preset-typescript](https://babeljs.io/docs/en/next/babel-preset-typescript.html) preset options.
 
-- `isTSX` (boolean, defaults to `false`)
-
-  Forcibly enables jsx parsing. Otherwise angle brackets will be treated as typescript's legacy type assertion `var foo = <string>bar;`. Also, `isTSX: true` requires `allExtensions: true`
-
-- `jsxPragma` (string, defaults to `React`)
-
-  Replace the function used when compiling JSX expressions.
-
-  This is so that we know that the import is not a type import, and should not be removed
-
-- `allExtensions` (boolean, defaults to `false`)
-
-  Indicates that every file should be parsed as TS or TSX (depending on the isTSX option)
-
-  > You can read more about configuring preset options [here](https://babeljs.io/docs/en/presets#preset-options)
+You can read more about configuring preset options [here](https://babeljs.io/docs/en/presets#preset-options)
 
 ## Original notes and issues
 
