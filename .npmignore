@@ -3,3 +3,4 @@ rollup.config.js
 .babelrc
 yarn.lock
 .editorconfig
+test

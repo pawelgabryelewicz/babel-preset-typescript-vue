@@ -5,7 +5,10 @@
   "main": "lib/index.js",
   "module": "lib/index.es.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "test": "jest",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test"
   },
   "author": "Paweł Gabryelewicz and contributors",
   "repository": {
@@ -22,7 +25,7 @@
     "@babel/helper-plugin-utils": "^7.0.0",
     "@babel/plugin-transform-typescript": "^7.3.2",
     "@babel/preset-typescript": "^7.3.3",
-    "fast-xml-parser": "^3.12.17"
+    "vue-template-compiler": "^2.6.11"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0-0"
@@ -30,13 +33,23 @@
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
+    "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.5.5",
+    "jest": "^26.0.1",
     "rollup": "^1.10.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.3.4",
-    "rollup-plugin-node-resolve": "^4.2.3"
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "vue": "^2.6.11"
   },
   "engines": {
     "node": ">=8.0.0"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "/test/fixtures/"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "./test/.+\\.js$"
   }
 }
