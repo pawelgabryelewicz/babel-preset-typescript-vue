@@ -46,9 +46,6 @@
     "node": ">=8.0.0"
   },
   "jest": {
-    "modulePathIgnorePatterns": [
-      "/test/fixtures/"
-    ],
     "testEnvironment": "node",
     "testRegex": "./test/.+\\.js$"
   }
