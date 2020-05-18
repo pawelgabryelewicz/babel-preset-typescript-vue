@@ -14,6 +14,8 @@ Most likely in the future, this won't be no longer needed if `vue-loader` will c
 
 This preset checks whether the .vue file (SFC) has a `lang="ts"` attribute set for the `<script>` tag. If so, [@babel/plugin-transform-typescript](https://babeljs.io/docs/en/babel-plugin-transform-typescript) is applied explicitly to the SFC file.
 
+_Warning_: Due to a usage of XML parser, SFC component tree MUST be a valid XML code (use self-closing tags such as `<img />`).
+
 ## Options
 
 All the options match the original [@babel/preset-typescript](https://babeljs.io/docs/en/next/babel-preset-typescript.html) preset options.
