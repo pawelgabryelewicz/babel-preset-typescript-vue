@@ -1,13 +1,13 @@
 <template>
   <div>
     This is a test
-    <img src="source.png">
+    <img src="source.png" />
   </div>
 </template>
 
 <script>
-  import Vue from "vue";
-  export default Vue.extend({
-    name: "TestComponent"
-  });
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "TestComponent",
+});
 </script>

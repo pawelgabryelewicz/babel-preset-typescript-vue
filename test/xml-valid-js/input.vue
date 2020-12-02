@@ -4,8 +4,8 @@
 </template>
 
 <script>
-  import Vue from "vue";
-  export default Vue.extend({
-    name: "TestComponent"
-  });
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "TestComponent",
+});
 </script>
