@@ -40,7 +40,7 @@ yarn add babel-preset-typescript-vue3 --dev
 
 ## Additional Notes
 
-This package is originated from [@babel/preset-typescript](https://github.com/pawelgabryelewicz/babel-preset-typescript-vue) of [pawelgabryelewicz](https://github.com/pawelgabryelewicz) and revised to meet the Vue.js 3 requirements using [@vue/compiler-sfc](https://www.npmjs.com/package/@vue/compiler-sfc), and following tests.
+This package is originated from [babel-preset-typescript-vue](https://github.com/pawelgabryelewicz/babel-preset-typescript-vue) by [pawelgabryelewicz](https://github.com/pawelgabryelewicz) and revised to meet the Vue.js 3 requirements using [@vue/compiler-sfc](https://www.npmjs.com/package/@vue/compiler-sfc), and following tests.
 
 ## Example Usage
 
