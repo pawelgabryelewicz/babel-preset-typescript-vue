@@ -3,11 +3,15 @@ import fs from "fs";
 
 export default (filePath) => {
   if (/\.vue$/.test(filePath)) {
-    const { script } = parse(
+    const { script, scriptSetup } = parse(
       fs.readFileSync(filePath, { encoding: "utf8" })
     ).descriptor;
-    return !!script.lang && script.lang.toLowerCase() === "ts";
-  }
 
+    return !!script && !!script.lang
+      ? script.lang.toLowerCase() === "ts"
+      : !!scriptSetup &&
+          !!scriptSetup.lang &&
+          scriptSetup.lang.toLowerCase() === "ts";
+  }
   return false;
 };

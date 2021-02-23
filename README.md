@@ -70,6 +70,14 @@ module: {
 }
 ```
 
+## Change Log
+
+#### v2.0.9 - Supports &lt;script setup&gt; ([Link](https://github.com/vuejs/rfcs/blob/sfc-improvements/active-rfcs/0000-sfc-script-setup.md))
+
+#### v2.0.8 - Update Dependencies (vue@3.0.3 -> vue@3.0.5)
+
+##
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
