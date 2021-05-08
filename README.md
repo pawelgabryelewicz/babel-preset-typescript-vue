@@ -76,8 +76,6 @@ v2.0.11 - Supports &lt;script setup&gt; ([Link](https://github.com/vuejs/rfcs/bl
 
 v2.0.8 - Update Dependencies (vue@3.0.3 -> vue@3.0.5)
 
-##
-
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
