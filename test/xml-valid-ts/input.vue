@@ -1,11 +1,12 @@
 <template>
-  <div>This is a test</div>
+  <div @click="testMethod">{{ text }}</div>
   <img src="source.png" />
 </template>
 
-<script lang="ts">
-  import Vue from "vue";
-  export default Vue.extend({
-    name: "TestComponent"
-  });
+<script lang="ts" name="TestComponent" setup>
+import { ref } from "vue";
+const text = ref("original");
+const testMethod = () => {
+  text.value = "changed";
+};
 </script>

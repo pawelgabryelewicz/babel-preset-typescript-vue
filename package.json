@@ -1,7 +1,7 @@
 {
-  "name": "babel-preset-typescript-vue",
-  "version": "1.1.1",
-  "description": "TypeScript preset for Babel 7.x supporting Vue.js components written in TS",
+  "name": "babel-preset-typescript-vue3",
+  "version": "2.0.13",
+  "description": "TypeScript preset for Babel 7.x supporting Vue.js 3 components written in TS",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
   "scripts": {
@@ -10,37 +10,39 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test"
   },
-  "author": "Paweł Gabryelewicz and contributors",
+  "author": "Coldsewoo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pawelgabryelewicz/babel-preset-typescript-vue"
+    "url": "https://github.com/Coldsewoo/babel-preset-typescript-vue3"
   },
   "license": "MIT",
   "keywords": [
-    "babel-preset",
+    "babel",
+    "preset",
     "typescript",
-    "vue"
+    "vue",
+    "vue3"
   ],
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.0.0",
     "@babel/plugin-transform-typescript": "^7.3.2",
     "@babel/preset-typescript": "^7.3.3",
-    "vue-template-compiler": "^2.6.11"
+    "@vue/compiler-sfc": "^3.0.5"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0-0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.3",
+    "@babel/cli": "^7.14.5",
     "@babel/core": "^7.4.3",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.5.5",
-    "jest": "^26.0.1",
+    "jest": "^26.6.3",
     "rollup": "^1.10.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-node-resolve": "^4.2.3",
-    "vue": "^2.6.11"
+    "vue": "^3.0.5"
   },
   "engines": {
     "node": ">=8.0.0"

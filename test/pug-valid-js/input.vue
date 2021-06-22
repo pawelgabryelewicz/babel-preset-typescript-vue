@@ -1,8 +1,5 @@
-<template>
-  <div>
-    This is a test
-    <img src="source.png" />
-  </div>
+<template lang="pug">
+  div test
 </template>
 
 <script>
